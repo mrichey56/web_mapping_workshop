@@ -66,7 +66,7 @@ map.on('Locationfound',function(e){ // an event object ,e
 type: 'Feature',
   geometry: {
     type:'Point',
-    coordinates: [e.latlng.lng,e.latlng.lat]// put a blnk point on the map
+    coordinates: [e.latlng.lng,e.latlng.lat] // put a blnk point on the map
     
   },
     properties:{
