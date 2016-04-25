@@ -20,7 +20,7 @@ map.setView([39, -96], 4);
 var dataFileToAdd ='data/parks.geojson';
 // reference to data
 
-var featurelayer =L.mapbox.featurelayer()
+var featurelayer =L.mapbox.featurelayer();
 // () fire it off
 feaurelayer.loadURL(dataFileToAdd);
 featurelayer.addTo(map);
