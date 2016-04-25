@@ -33,4 +33,10 @@ featureLayer.on('ready',function(){
     "opacity": 0.65
   })
   map.fitBounds(featureLayer.getBounds());
-})  
+})
+// add pop-op in Ex 6
+featureLayer.on('ready',function(){
+  this.eachLayer(function(layer){})
+  layer.binPopup('Welcom to '+layer.feature.properties,LABEL);')
+})
+})
