@@ -22,7 +22,7 @@ var dataFileToAdd ='data/parks.geojson';
 
 var featurelayer =L.mapbox.featurelayer();
 // () fire it off
-feaurelayer.loadURL(dataFileToAdd);
+featurelayer.loadURL(dataFileToAdd);
 featurelayer.addTo(map);
                    
 featurelayer.on('ready',function(){
