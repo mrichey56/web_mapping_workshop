@@ -77,4 +77,4 @@ type: 'Feature',
 })
 })
 
-map.locate({setView:true});  /should zoom
+map.locate({setView:true});  //should zoom
