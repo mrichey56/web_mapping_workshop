@@ -65,7 +65,7 @@ map.on('Locationfound',function(e){ // an event object ,e
   myLocation.setGeoJSON({})
 type: 'Feature',
   geometry: {
-    type" "Point',
+    type:'Point',
     coordinates: [e.latlong.lng,e.latlng.lat]]// put a blnk point on the map
     
   },
