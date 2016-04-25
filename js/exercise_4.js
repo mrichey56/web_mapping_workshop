@@ -72,7 +72,7 @@ type: 'Feature',
     properties:{
       "title": 'Here I AM!', // double qout noy vital
         "marker-color": '#ff8888',
-          "marker-symbol": 'star'
+          "marker-symbol": 'star',
     }
 })
 })
