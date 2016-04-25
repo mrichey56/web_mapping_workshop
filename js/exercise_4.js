@@ -71,7 +71,7 @@ type: 'Feature',
     properties:{
       "title": 'Here I AM!', // double qoute not vital
         "marker-color": '#ff8888',
-          "marker-symbol": 'star'
+          "marker-symbol": 'car'
     }
 })
 })
