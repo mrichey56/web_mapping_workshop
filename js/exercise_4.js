@@ -41,7 +41,7 @@ var clickHandler = function(e){
   $('#info').fadeIn(400,function(){
     //html string to pass through variable
     info +='<div>',
-      info +=	"<h2>' + feature.properties.LABEL + '</h2>';// close header
+      info +=	"<h2>' + feature.properties.LABEL + '</h2>';
     info += "<p>' + feature.properties.LOCATION + '</p>';
     info += '</div>';
     $('#info').append(info);
