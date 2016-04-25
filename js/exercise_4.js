@@ -40,7 +40,7 @@ var clickHandler = function(e){
   var feature = e.target.feature;
   $('#info').fadeIn(400,function(){
     //html string to pass through variable
-    var info +='<div>',
+    var info ='<div>'
       info +=	'<h2>' + feature.properties.LABEL + '</h2>';
     info += '<p>' + feature.properties.LOCATION + '</p>';
     info += '</div>';
