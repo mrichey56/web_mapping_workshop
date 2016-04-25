@@ -38,5 +38,5 @@ featureLayer.on('ready',function(){
 featureLayer.on('ready',function(){
   this.eachLayer(function(layer){
   layer.binPopup('Welcom to '+layer.feature.properties,LABEL);
-})
+  })
 })
