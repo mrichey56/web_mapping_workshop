@@ -36,7 +36,7 @@ featureLayer.on('ready',function(){
 })
 // add pop-op in Ex 6
 featureLayer.on('ready',function(){
-  this.eachLayer(function(layer){})
+  this.eachLayer(function(layer){
   layer.binPopup('Welcom to '+layer.feature.properties,LABEL);
 })
 })
