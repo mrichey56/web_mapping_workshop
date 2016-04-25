@@ -66,11 +66,11 @@ map.on('Locationfound',function(e){ // an event object ,e
 type: 'Feature',
   geometry: {
     type:'Point',
-    coordinates: [e.latlong.lng,e.latlng.lat]// put a blnk point on the map
+    coordinates: [e.latlng.lng,e.latlng.lat]// put a blnk point on the map
     
   },
     properties:{
-      "title": 'Here I AM!', // double qout noy vital
+      "title": 'Here I AM!', // double qoute not vital
         "marker-color": '#ff8888',
           "marker-symbol": 'star'
     }
