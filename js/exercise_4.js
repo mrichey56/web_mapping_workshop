@@ -57,4 +57,24 @@ map.on('click', function(){
   $('#info').fadeOut(200);
   $('#info').empty();
  })
-  
+// add the dot to locate me.
+var myLocation = L.mapbox.featureLayer();
+myLocation.addTo(map);
+  // function- listen for 
+map.on('Locationfound',function(e){ // an event object ,e
+  myLocation.setGeoJSON({})
+type: 'Feature',
+  geometry: {
+    type" "Point',
+    coordinates: [e.latlong.lng,e.latlng.lat]]// put a blnk point on the map
+    
+  },
+    properties:{
+      "title": 'Here I AM!', // double qout noy vital
+        "marker-color": '#ff8888',
+          "marker-symbol": 'star'
+    }
+})
+})
+
+map.locate({setView:true});  /should zoom
