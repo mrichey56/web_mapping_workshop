@@ -20,17 +20,17 @@ map.setView([39, -96], 4);
 var dataFileToAdd ='data/parks.geojson';
 // reference to data
 
-var featurelayer =L.mapbox.featurelayer();
+var featureLayer =L.mapbox.featureLayer();
 // () fire it off
-featurelayer.loadURL(dataFileToAdd);
-featurelayer.addTo(map);
+featureLayer.loadURL(dataFileToAdd);
+featureLayer.addTo(map);
                    
-featurelayer.on('ready',function(){
+featureLayer.on('ready',function(){
   this.setStyle({
     "color":"#6583BF",
     "fillColor":"#6583BF",
     "weight": .5,
     "opacity": 0.65
   })
-  map.fitBounds(featurelayer.getBounds());
+  map.fitBounds(featureLayer.getBounds());
 })  
