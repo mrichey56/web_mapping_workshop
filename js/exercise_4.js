@@ -16,3 +16,21 @@ var map = L.mapbox.map('map', mapId);
 map.setView([39, -96], 4);
 
 // Great, now we have a basic web map!
+
+var dataFileToAdd ='data/parks.geojson';
+// reference to data
+
+var featurelayer =L.mapbox.featurelayer()
+// () fire it off
+feaurelayer.loadURL(dataFileToAdd);
+featurelayer.addTo(map;
+                   
+featurelayer.on('ready',function(){
+  this.setStyle({
+    "color":"#6583BF",
+    "fillColor":"#6583BF",
+    "weight": .5,
+    "opacity": 0.65
+  })
+  map.fitBounds(featurelayer.getBounds());
+})  
