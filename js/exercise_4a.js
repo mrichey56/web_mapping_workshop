@@ -8,7 +8,7 @@ var mapId = 'mrichey56.pp9j6b27';
 var accessToken = 'pk.eyJ1IjoibXJpY2hleTU2IiwiYSI6ImNpbmcyZDliZzFiZTJ1Zmx3cDVxaDhqZWMifQ.6ULZdwh0R8Mwq7YO5nJqVA';
 
 // Create the map object with your mapId and token, 
-// referencing the DOM element where you want the map to go.
+// referencing the DOM element where you want the map to go
 L.mapbox.accessToken = accessToken;
 var map = L.mapbox.map('map', mapId);
 
